@@ -12,8 +12,9 @@ app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'dev-secret-key')
 
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get(
     'DATABASE_URL',
-    'postgresql://USUARIO:PASSWORD@HOST/neondb?sslmode=require'
+    'postgresql://neondb_owner:npg_O1toy9DsgBRa@ep-patient-dew-ahpacjaq-pooler.c-3.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require'
 )
+
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
